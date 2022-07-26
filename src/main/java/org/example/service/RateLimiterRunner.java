@@ -1,6 +1,9 @@
 package org.example.service;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -13,16 +16,16 @@ public class RateLimiterRunner {
          * Why? Because I want them to all be very busy and have tons of work to do.
          *
          * HOWEVER, the examineNumber method in this class is using "RateLimiter"
-         * RateLimiter has one job: make sure only x threads can touch a critical section per second.
+         * RateLimiter has one job: make sure the following lines of code can only be touched x times per second.
          * When RATE_LIMITER.acquire() is called in that method, it permits the thread to proceed if there is an open
          *  permit.
          * If there is not an open permit, it forces the thread to wait until there is an open permit.
          *
-         * You'll need to write the RATE_LIMITER code.
+         * YOUR JOB: You'll need to write the RATE_LIMITER code.
+         * TO TEST: Just run this. The output in the console should show roughly ten numbers per second.
+         *
          * HINT: Consider using Semaphore and consider using OOP and consider using the other stuff you've learned
          * about threads.
-         *
-         * HINT: Only make changes to RateLimiter.java
          *
          * GOOD LUCK!
          *
@@ -63,7 +66,7 @@ public class RateLimiterRunner {
 
     private static void examineNumber(String num) {
         RATE_LIMITER.acquire();
-        System.out.println(ZonedDateTime.now() + ": " + num);
+        System.out.println(LocalTime.now().truncatedTo(ChronoUnit.SECONDS) + ": " + num);
     }
 
 
