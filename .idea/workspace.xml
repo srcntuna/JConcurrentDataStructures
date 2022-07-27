@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10880424-2029-447c-a7dd-2cd3a0f76b59" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/RateLimiterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/RateLimiterRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/singleton/DictionaryRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/singleton/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/singleton/Dictionary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,20 @@
       <recent name="org.example.map" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DictionaryRunner">
+    <configuration name="DictionaryRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.singleton.DictionaryRunner" />
+      <module name="JConcurrentDataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.singleton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="JConcurrentDataStructures" />
@@ -61,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DictionaryRunner" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
